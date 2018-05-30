@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">library</string>
+
+    <string name="calendarStart"></string>
+    <string name="calendarEnd"></string>
+    <string name="onDay">一天</string>
+    <string name="today">今天</string>
+    <string name="onOrder">在途</string>
+
+</resources>
