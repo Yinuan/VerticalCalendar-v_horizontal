@@ -10,6 +10,7 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.muzi.library.R;
+import com.muzi.library.bean.DayBean;
 import com.muzi.library.bean.MonthBean;
 import com.muzi.library.manager.MGridLayoutManager;
 
@@ -45,7 +46,8 @@ public class CalendarAdapter extends BaseQuickAdapter<MonthBean, BaseViewHolder>
         recyclerView = helper.getView(R.id.rvMonth);
         recyclerView.setLayoutManager(new MGridLayoutManager(context, 7));
 
-        adapter = new MonthAdapter(context, R.layout.item_day, item.getDayList());
+        List<DayBean> dList =item.getDayList();
+        adapter = new MonthAdapter(context, R.layout.item_day, dList);
        // adapter = new MonthAdapter(context, R.layout.item_day, item.getDayList());
         adapter.setSpanSizeLookup(new SpanSizeLookup() {
             @Override

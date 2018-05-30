@@ -29,6 +29,6 @@ public class MLandLinearLayout extends LinearLayout {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int width=MeasureSpec.getSize(widthMeasureSpec);
-        setMeasuredDimension(widthMeasureSpec,100);
+        setMeasuredDimension(widthMeasureSpec,90);
     }
 }

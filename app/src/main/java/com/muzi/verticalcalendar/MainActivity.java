@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onStart(DayBean dayBean) {
                 Log.d("MainActivity", "dayBean:" + dayBean);
+                Log.d("MainActivity", "dayBean.getCalendar().getTime().getTime()/1000:" +
+                        (dayBean.getCalendar().getTime().getTime() / 1000l));
             }
 
             @Override
