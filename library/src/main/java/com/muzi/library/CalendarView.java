@@ -486,6 +486,8 @@ public class CalendarView extends RelativeLayout {
 
         //处理点击事件
         handleListener();
+
+
     }
 
     /**
